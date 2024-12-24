@@ -1,0 +1,207 @@
+/*
+Link to Figma: https://scrimba.com/links/santa-saas-figma
+*/
+* {
+    --red: rgba(143, 0, 2, 0.83);
+    --light-red: #FFF2F2;
+    --dark-red: #470000;
+    --white: #FFFFFF;
+    --black: #000000;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+:root {
+    --font-family: "Be Vietnam Pro", sans-serif;
+    --second-family: "DM Sans", sans-serif;
+    --third-family: "Manrope", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-red);
+    color: var(--dark-red);
+}
+
+header {
+    text-align: center; /* Centers text in the header */
+    padding: 2rem 0; /* Adds padding to the header */
+    background: var(--light-red); /* Background color for header */
+}
+
+nav {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and menu */
+    background-color: var(--red);
+    padding: 1rem 2rem; /* Adds padding to the navigation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+nav img {
+    max-width: 100px; /* Sets a max width for the logo */
+}
+
+nav span {
+    font-size: 1.5rem; /* Increases font size for the site name */
+    color: white; /* Sets the color of the site name */
+    margin-left: 1rem; /* Adds space between logo and site name */
+}
+
+nav ul {
+    display: flex; /* Aligns list items horizontally */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+nav li {
+    margin: 0 1rem; /* Adds margin between list items */
+}
+
+nav a {
+    color: white; /* Changes link color to white */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes links bold */
+    padding: 0.5rem 1rem; /* Adds padding to links */
+    border-radius: 5px; /* Rounds the corners of links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lightens background on hover */
+    color: var(--light-red); /* Changes link color on hover */
+}
+
+button {
+    background-color: var(--dark-red);
+    color: white;
+    font-family: var(--second-family);
+    font-size: 1rem; /* Adjust font size */
+    padding: 0.5rem 1.5rem; /* Adds padding for a better click area */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    margin: 0 0.5rem; /* Adds margin between buttons */
+}
+
+button:hover {
+    background-color: var(--red); /* Darkens button on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+button:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 0 3px rgba(143, 0, 2, 0.5); /* Adds a custom focus outline */
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Adjusts heading size */
+    margin: 1rem 0; /* Adds margin to the heading */
+}
+
+header p {
+    font-size: 1.2rem; /* Adjusts paragraph size */
+    margin: 1rem 0; /* Adds margin to the paragraph */
+}
+
+/* Main Sections */
+/* Main Sections */
+#product, #solution, #pricing, #customer {
+    padding: 2rem; /* Adds padding to sections */
+    text-align: center; /* Centers text in sections */
+    background-color: var(--red); /* Red background for sections */
+    color: var(--white); /* White font color for sections */
+}
+
+#product h2, #solution h2, #pricing h2, #customer h2 {
+    font-size: 2rem; /* Adjusts heading size for sections */
+    margin: 1rem 0; /* Adds margin to the heading */
+}
+
+#product div, #solution div, #pricing div, #customer div {
+    margin: 1.5rem 0; /* Adds margin between content blocks */
+}
+
+#customer img {
+    width: 100px; /* Sets width for customer images */
+    border-radius: 50%; /* Makes images circular */
+    border: 2px solid var(--white); /* Adds a white border around images */
+}
+
+footer {
+    background-color: var(--dark-red);
+    color: var(--white); /* Sets text color in the footer */
+    padding: 2rem 0; /* Adds padding to the footer */
+    text-align: center; /* Centers text in the footer */
+}
+
+footer img {
+    max-width: 80px; /* Sets a max width for the footer logo */
+    margin-bottom: 1rem; /* Adds space below the logo */
+}
+
+footer h4 {
+    margin: 1rem 0; /* Adds margin to footer headings */
+}
+
+footer ul {
+    list-style-type: none; /* Removes bullet points from lists */
+    padding: 0; /* Removes default padding */
+}
+
+footer li {
+    margin: 0.5rem 0; /* Adds margin between list items */
+}
+
+footer a {
+    color: var(--white); /* Sets link color in the footer */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: var(--light-red); /* Changes link color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks navigation items vertically on smaller screens */
+        align-items: flex-start; /* Aligns items to the start */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks menu items vertically */
+        width: 100%; /* Makes the menu full width */
+    }
+
+    nav li {
+        margin: 0.5rem 0; /* Adjusts margin for vertical layout */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjusts heading size for smaller screens */
+    }
+
+    header p {
+        font-size: 1rem; /* Adjusts paragraph size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Makes buttons full-width on smaller screens */
+        margin: 0.5rem 0; /* Adds margin between buttons */
+    }
+
+    #product, #solution, #pricing, #customer {
+        padding: 1rem; /* Reduces padding for smaller screens */
+    }
+}
+
+   

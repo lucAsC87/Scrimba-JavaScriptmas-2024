@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+} 
+
+.cover {
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid whitesmoke;
+    display: flex;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    align-items: end;
+    background-color: #024f1a;
+    background-image: url(santa.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: -70px -0px;
+}   
+
+h1, h2 {
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 45px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Actor', sans-serif;
+    font-size: medium;
+}
+
+#title {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+#subtitle {
+    width: 200px;
+    text-align: center;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    margin-top: 15px;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+#strip {
+    align-self: stretch;
+    text-align: center;
+    font-family: 'Arbutus Slab', serif;
+    margin-top: 65px;
+    line-height: 15px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+#author {
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#info {
+    margin-bottom: 30px;
+}
+
+#bold {
+    font-weight: bolder;
+}

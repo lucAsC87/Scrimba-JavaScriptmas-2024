@@ -1,0 +1,30 @@
+html, body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background {
+    width: 360px;
+    height: 225px;
+    background: repeating-linear-gradient(
+        45deg,
+        #DB381F,
+        #DB381F 20px,
+        #253140 0px,
+        #253140 40px
+    );
+    position: absolute;
+    border-radius: 20px;
+    border: solid 5px #B5CFCE;
+}
+
+.face {
+    width: 50%;
+    content:url('https://uxwing.com/wp-content/themes/uxwing/download/festival-culture-religion/santa-claus-face-icon.png');
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 20px;  
+}
